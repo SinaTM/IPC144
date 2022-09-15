@@ -25,17 +25,7 @@ int main(void)
 	printf("\nTomorow\'s date is: %d/%d/%d \n", Year, Month, Day);
 	printf("=====================================\n");
 
-	// +---------------------------------------------------------
-	//How to not use the round() command and perform rounding on float numbers using casting
-	double Pi = 3.14159265359;
-	int Pi_1; 
-	double Pi_2; 
-	Pi_1 = int(Pi * 100);
-	Pi_2 = (double(int(Pi * 100))) / 100; 
-	printf("Pi = %f\n", Pi); 
-	printf("Pi_1 = %d\n", Pi_1); 
-	printf("Pi_2 = %f\n", Pi_2); 
-	printf("Pi_2 = %.2f\n", Pi_2); 
+	
 	
 	
 
