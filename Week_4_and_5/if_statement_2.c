@@ -11,7 +11,7 @@ int main(void) {
     printf("\nEnter minute: \n");
     scanf("%d", &Min);
     printf("\n24-hour time is: %d:%d\n", Hour, Min);
-    if (Hour < 11)
+    if (Hour <= 11)
         printf("Equivalent 12-hour time: %d:%d AM\n",
             Hour == 0 ? 12 : Hour, Min);
     else
