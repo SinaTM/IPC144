@@ -32,6 +32,7 @@ int main(void) {
         return 1; /* operation error */
     }
 
+    //use Euclidean Algorithm for finding the greatest common divisor (GCD)
     Num_temp = Num_R;
     GCD = Num_D;
     while (Num_temp != 0) {
@@ -39,7 +40,7 @@ int main(void) {
         GCD = Num_temp;
         Num_temp = Temp;
     }
-
+// show the output
     if (Num_R / GCD == Num_D / GCD)
         printf("Result: %d\n", Num_R / GCD);
     else if (Num_R > Num_D) {
