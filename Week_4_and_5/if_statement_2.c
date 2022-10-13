@@ -4,19 +4,19 @@
 
 int main(void) {
 
-    int Hour, Min;
+    int hour, minute;
 
     printf("Enter hour: \n");
-    scanf("%d", &Hour);
+    scanf("%d", &hour);
     printf("\nEnter minute: \n");
-    scanf("%d", &Min);
-    printf("\n24-hour time is: %d:%d\n", Hour, Min);
-    if (Hour <= 11)
+    scanf("%d", &minute);
+    printf("\n24-hour time is: %d:%d\n", hour, minute);
+    if (hour <= 11)
         printf("Equivalent 12-hour time: %d:%d AM\n",
-            Hour == 0 ? 12 : Hour, Min);
+            hour == 0 ? 12 : hour, minute);
     else
         printf("Equivalent 12-hour time: %d:%d PM\n",
-            Hour == 12 ? 12 : Hour - 12, Min);
+            hour == 12 ? 12 : hour - 12, minute);
 
     return 0;
 }
