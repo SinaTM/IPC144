@@ -4,14 +4,14 @@
 
 int main(void) {
 
-    int Num;
+    int num;
 
     printf("Enter a two-digit number: ");
-    scanf("%d", &Num);
+    scanf("%d", &num);
 
-    switch (Num / 10) {
+    switch (num / 10) {
     case 1:
-        switch (Num % 10) {
+        switch (num % 10) {
         case 0:
             printf("You entered the number ten\n");
             break;
@@ -75,8 +75,8 @@ int main(void) {
         return 0;
     }
 
-    if (Num / 10 != 1) {
-        switch (Num % 10) {
+    if (num / 10 != 1) {
+        switch (num % 10) {
         case 0:
             printf("\n");
             break;
