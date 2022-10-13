@@ -5,12 +5,12 @@ squars between 1 and n*/
 
 int main(void) {
 
-    int Num, ii;
+    int num, ii;
 
     printf("Enter a number: ");
-    scanf("%d", &Num);
+    scanf("%d", &num);
 
-    for (ii = 1; ii * ii <= Num; ii++) {
+    for (ii = 1; ii * ii <= num; ii++) {
         if ((ii * ii) % 2 != 0)
             continue;
         printf("%d\n", ii * ii);
