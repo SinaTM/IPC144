@@ -6,15 +6,15 @@ where n is an integer entered by the user*/
 
 int main(void) {
 
-    int ii, Num, Denom = 1;
+    int ii, num, denom = 1;
     float e = 1.0f;
 
     printf("Enter integer n: ");
-    scanf("%d", &Num);
+    scanf("%d", &num);
 
 
-    for (ii = 1; ii <= Num; ii++) {
-        e += 1.0f / (Denom *= ii);
+    for (ii = 1; ii <= num; ii++) {
+        e += 1.0f / (denom *= ii);
     }
     printf("Approximation of e: %f\n", e);
 
