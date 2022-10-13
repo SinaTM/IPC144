@@ -5,20 +5,20 @@ in the month and the day of the wekk on which the month begins*/
 
 int main(void) {
 
-    int Num, Day = 1, Week_day, ii;
+    int num, day = 1, weekDay, ii;
 
     printf("Enter number of days in month: ");
-    scanf("%d", &Num);
+    scanf("%d", &num);
     printf("Enter starting day of the week (1=Mon, 7=Sun): ");
-    scanf("%d", &Week_day);
+    scanf("%d", &weekDay);
 
     printf("\n Mo Tu We Th Fr Sa Su\n");
 
-    for (ii = 1; ii <= Num + Week_day - 1; ii++) {
-        if (ii < Week_day)
+    for (ii = 1; ii <= num + weekDay - 1; ii++) {
+        if (ii < weekDay)
             printf("   ");
         else
-            printf("%3d", Day++);
+            printf("%3d", day++);
         if (ii % 7 == 0)
             printf("\n");
     }
