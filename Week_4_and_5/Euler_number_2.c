@@ -6,17 +6,17 @@ until the current term is smaller than user float input Epsilon*/
 
 int main(void) {
 
-    int i, Denom = 1;
-    float e_num = 1.0f, Epsilon, temp;
+    int i, denom = 1;
+    float eNum = 1.0f, epsilon, temp;
 
     printf("Enter epsilon: ");
-    scanf("%f", &Epsilon);
+    scanf("%f", &epsilon);
 
-    for (i = 1, temp = 1.0f; temp > Epsilon; i++) {
-        temp = (1.0f / (Denom *= i));
-        e_num += temp;
+    for (i = 1, temp = 1.0f; temp > epsilon; i++) {
+        temp = (1.0f / (denom *= i));
+        eNum += temp;
     }
-    printf("Approximation of e: %f\n", e_num);
+    printf("Approximation of e: %f\n", eNum);
 
     return 0;
 }
