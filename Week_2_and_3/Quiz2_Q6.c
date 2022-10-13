@@ -3,9 +3,9 @@
 
 int main(void) {
 
-	int Num;
+	int num;
 	printf("Enter a three-digit number: ");
-	scanf("%d", &Num);
-	printf("%d%d%d\n", Num % 10, (Num / 10) % 10, Num / 100);
+	scanf("%d", &num);
+	printf("%d%d%d\n", num % 10, (num / 10) % 10, num / 100);
 	return 0;
 }
