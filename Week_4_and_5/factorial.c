@@ -2,19 +2,18 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-
 int main(void) {
 
-    int ii, Num;
+    int ii, num;
     long double fact = 1.0;
 
     printf("Enter a positive integer: ");
-    scanf("%d", &Num);
+    scanf("%d", &num);
 
-    for (ii = Num; ii > 1; ii--)
+    for (ii = num; ii > 1; ii--)
         fact *= ii;
 
-    printf("Factorial of %d: %Lf\n", Num, fact);
+    printf("Factorial of %d: %Lf\n", num, fact);
 
     return 0;
 }
