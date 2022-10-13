@@ -4,41 +4,41 @@
 
 int main(void) {
 
-    int N1, N2, N3, N4, Max, Min, Max_1, Max_2, Min_1, Min_2;
+    int n1, n2, n3, n4, max, min, max_1, max_2, min_1, min_2;
 
     printf("Enter four integers seperated by commas (number1,number2,number3,number4): \n");
-    scanf("%d,%d,%d,%d", &N1, &N2, &N3, &N4);
+    scanf("%d,%d,%d,%d", &n1, &n2, &n3, &n4);
 
-    if (N1 >= N2) {
-        Max_1 = N1;
-        Min_1 = N2;
+    if (n1 >= n2) {
+        max_1 = n1;
+        min_1 = n2;
     }
     else {
-        Max_1 = N2;
-        Min_1 = N1;
+        max_1 = n2;
+        min_1 = n1;
     }
 
-    if (N3 >= N4) {
-        Max_2 = N3;
-        Min_2 = N4;
+    if (n3 >= n4) {
+        max_2 = n3;
+        min_2 = n4;
     }
     else {
-        Max_2 = N4;
-        Min_2 = N3;
+        max_2 = n4;
+        min_2 = n3;
     }
 
 
-    if (Max_2 > Max_1)
-        Max = Max_2;
+    if (max_2 > max_1)
+        max = max_2;
     else
-        Max = Max_1;
+        max = max_1;
 
-    if (Min_1 < Min_2)
-        Min = Min_1;
+    if (min_1 < min_2)
+        min = min_1;
     else
-        Min = Min_2;
+        min = min_2;
 
-    printf("Largest: %d\nSmallest: %d\n", Max, Min);
+    printf("Largest: %d\nSmallest: %d\n", max, min);
 
     return 0;
 }
