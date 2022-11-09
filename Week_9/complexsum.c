@@ -4,13 +4,13 @@ typedef struct Complex
 {
     float real;
     float imag;
-} complex;
+};
 
-void addNumbers(complex c1, complex c2, complex* result);
+void addNumbers(struct Complex c1, struct Complex c2, struct Complex* result);
 
 int main()
 {
-    complex complexNum1, complexNum2, complexSum;
+    struct Complex complexNum1, complexNum2, complexSum;
 
     printf("For first number,\n");
     printf("Enter real part: ");
@@ -30,7 +30,7 @@ int main()
 
     return 0;
 }
-void addNumbers(complex c1, complex c2, complex* result)
+void addNumbers(struct Complex c1, struct Complex c2, struct Complex* result)
 {
     result->real = c1.real + c2.real;
     result->imag = c1.imag + c2.imag;
