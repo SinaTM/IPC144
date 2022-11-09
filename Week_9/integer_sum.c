@@ -9,10 +9,10 @@ int main() {
     printf("Enter 6 numbers: ");
 
     for (i = 0; i < 6; ++i) {
-        // Equivalent to scanf("%d", &x[i]);
+        // Equivalent to scanf("%d", &arrInt[i]);
         scanf("%d", arrInt + i);
 
-        // Equivalent to sum += x[i]
+        // Equivalent to sum += arrInt[i]
         sum += *(arrInt + i);
     }
 
