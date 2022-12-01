@@ -16,7 +16,7 @@ int main(void)
 
     if ( ( fp1 = fopen(INPUT_FILE, "r") ) != NULL && ( fp2 = fopen(OUTPUT_FILE, "w") ) != NULL )
     {
-        while ( (ch = getc(fp1)) != EOF)
+        while ( (ch = fgetc(fp1)) != EOF)
         {
              
             if (isalpha(ch))
