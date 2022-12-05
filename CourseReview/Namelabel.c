@@ -8,7 +8,7 @@
 int main(void) {
 
     int i;
-    char ch, initial, last[SZ] = { 0 };
+    char ch, initial, last[SZ+1] = { 0 };
 
     printf("Enter a first and last name: ");
 
